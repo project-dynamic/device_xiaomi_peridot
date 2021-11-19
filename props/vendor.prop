@@ -180,6 +180,7 @@ vendor.gatekeeper.is_security_level_spu=0
 # Media
 debug.stagefright.c2inputsurface=-1
 vendor.media.omx=0
+persist.mm.enable.prefetch=true
 
 # Power
 ro.vendor.extension_library=libqti-perfd-client.so
