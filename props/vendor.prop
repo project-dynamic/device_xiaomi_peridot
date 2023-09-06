@@ -76,6 +76,9 @@ ro.bluetooth.a2dp_offload.supported=true
 camera.disable_zsl_mode=true
 ro.camera.enableCamera1MaxZsl=1
 
+# displayfeature
+persist.sys.sf.native_mode=258
+
 # Dolby Atmos
 vendor.audio.dolby.ds2.enabled=false
 vendor.audio.dolby.ds2.hardbypass=false
