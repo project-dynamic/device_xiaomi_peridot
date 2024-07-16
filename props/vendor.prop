@@ -232,7 +232,7 @@ persist.vendor.radio.vdp_on_ims_cap=1
 persist.vendor.qti.telephony.vt_cam_interface=1
 
 # Vibrator
-ro.hardware.vibrator.playLengthMs=45
+ro.vendor.mm.vibrator.sys_path=/sys/class/qcom-haptics
 
 # Volume
 ro.config.alarm_vol_steps=15
