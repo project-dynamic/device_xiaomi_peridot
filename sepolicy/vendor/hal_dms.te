@@ -2,6 +2,9 @@ type hal_dms_default, domain;
 type hal_dms_default_exec, exec_type, file_type, vendor_file_type;
 type hal_dms_hwservice, hwservice_manager_type;
 
+binder_call(hal_dms_client, hal_dms_server)
+binder_call(hal_dms_server, hal_dms_client)
+
 allow hal_dms_client hal_dms_server:binder { call transfer };
 allow hal_dms_client hal_dms_server:binder transfer;
 allow hal_dms_client hal_dms_server:fd *;
