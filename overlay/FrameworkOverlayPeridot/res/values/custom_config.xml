@@ -33,4 +33,8 @@
     
     <!-- PowerOffAlarmService -->
     <bool name="config_powerOffAlarmEnabled">true</bool>
+    
+    <!-- media controls -->
+    <bool name="config_mediaControlsTurbulenceByDefault">true</bool>
+
 </resources>
