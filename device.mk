@@ -394,10 +394,6 @@ PRODUCT_PACKAGES += \
     WifiOverlayPeridotPOCO \
     WifiOverlayPeridotRedmi
 
-# Parts
-PRODUCT_PACKAGES += \
-    XiaomiParts
-
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
