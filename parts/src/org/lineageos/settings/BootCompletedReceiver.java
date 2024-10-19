@@ -31,10 +31,11 @@ import android.provider.Settings;
 import android.util.Log;
 import android.view.Display;
 import android.view.Display.HdrCapabilities;
-import org.lineageos.settings.display.ColorModeService;
 
+import org.lineageos.settings.display.ColorModeService;
 import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.thermal.ThermalUtils;
+import org.lineageos.settings.thermal.ThermalTileService;
 import org.lineageos.settings.refreshrate.RefreshUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
@@ -52,6 +53,10 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         ThermalUtils.startService(context);
         RefreshUtils.startService(context);
         overrideHdrTypes(context);
+
+        //thermal tile service
+        Intent thermalServiceIntent = new Intent(context, ThermalTileService.class);
+        context.startServiceAsUser(thermalServiceIntent, UserHandle.CURRENT);
     }
 
     private static void overrideHdrTypes(Context context) {
