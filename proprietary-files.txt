@@ -1712,7 +1712,6 @@ vendor/lib64/libqtikeymaster4.so
 vendor/bin/hw/android.hardware.security.keymint-service-qti
 vendor/bin/hw/android.hardware.security.keymint-service.strongbox-nxp
 vendor/bin/hw/android.hardware.weaver-service.nxp-qti
-vendor/etc/hal_uuid_map_peridot.xml
 vendor/etc/init/android.hardware.identity-service-qti.rc
 vendor/etc/init/android.hardware.security.keymint-service-qti.rc
 vendor/etc/init/android.hardware.security.keymint-service.strongbox-nxp.rc
@@ -2397,6 +2396,8 @@ vendor/etc/vintf/manifest/secure_element-service.xml
 vendor/lib64/hw/libEseUtils.so
 vendor/lib64/libGPQeSE.so
 vendor/lib64/vendor.xiaomi.hardware.aidl.mtdservice-V1-ndk_platform.so
+vendor/etc/hal_uuid_map_config.xml
+vendor/etc/hal_uuid_map_peridot.xml
 
 # Sensors
 odm/bin/test-nusensors
