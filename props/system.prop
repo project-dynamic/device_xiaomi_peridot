@@ -33,3 +33,6 @@ persist.vendor.vonr_setting_support=1
 
 # Camera
 vendor.camera.aux.packagelist=org.lineageos.aperture,org.codeaurora.snapcam,com.android.camera,com.google.camera
+
+# Disable default frame rate limit for games
+debug.graphics.game_default_frame_rate.disabled=1
