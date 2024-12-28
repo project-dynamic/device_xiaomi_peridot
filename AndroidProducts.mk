@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_peridot.mk
+    $(LOCAL_DIR)/flare_peridot.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_peridot-eng \
-    aosp_peridot-userdebug \
-    aosp_peridot-user
+    flare_peridot-eng \
+    flare_peridot-userdebug \
+    flare_peridot-user
