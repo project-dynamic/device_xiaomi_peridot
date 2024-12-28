@@ -22,6 +22,9 @@ $(call inherit-product, packages/modules/Virtualization/apex/product_packages.mk
 # Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
+# Inherit from the MiuiCamera setup
+$(call inherit-product-if-exists, device/xiaomi/peridot-miuicamera/device.mk)
+
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -343,15 +346,6 @@ PRODUCT_COPY_FILES += \
 # Memtrack
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.memtrack-service
-
-# MiuiCamera
-PRODUCT_PACKAGES += \
-    MiuiCameraOverlayIcon
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/permissions/default-permissions-miuicamera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions/default-permissions-miuicamera.xml \
-    $(LOCAL_PATH)/configs/permissions/miuicamera-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/miuicamera-hiddenapi-package-whitelist.xml \
-    $(LOCAL_PATH)/configs/permissions/privapp-permissions-miuicamera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-miuicamera.xml
 
 # Network
 PRODUCT_PACKAGES += \
