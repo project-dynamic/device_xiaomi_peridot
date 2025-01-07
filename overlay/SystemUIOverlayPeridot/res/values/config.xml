@@ -76,4 +76,6 @@
     <!-- Whether show refresh rate QS tile -->
     <bool name="config_showRefreshRateQsTile">true</bool>
 
+    <!-- The padding on the start of the statusbar -->
+    <dimen name="status_bar_padding_start">18px</dimen>
 </resources>
