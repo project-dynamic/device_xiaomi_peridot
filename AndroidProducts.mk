@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/flare_peridot.mk
+    $(LOCAL_DIR)/lineage_peridot.mk
 
 COMMON_LUNCH_CHOICES := \
-    flare_peridot-eng \
-    flare_peridot-userdebug \
-    flare_peridot-user
+    lineage_peridot-eng \
+    lineage_peridot-userdebug \
+    lineage_peridot-user

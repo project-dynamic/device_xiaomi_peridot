@@ -8,31 +8,19 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Flare-os stuff.
-$(call inherit-product, vendor/flare/config/common_full_phone.mk)
+# Inherit some common RisingOs stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from peridot device
 $(call inherit-product, device/xiaomi/peridot/device.mk)
 
-PRODUCT_NAME := flare_peridot
+PRODUCT_NAME := lineage_peridot
 PRODUCT_DEVICE := peridot
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := 24069PC21G
 
-# Derpfest
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-EXTRA_UDFPS_ICONS := true
-TARGET_HAS_UDFPS := true
-FLARE_BUILD_TYPE := OFFICIAL
-FLARE_MAINTAINER := kenway214
-TARGET_ENABLE_BLUR := true
-
-# Gapps
-WITH_GAPPS := true
-BUILD_WITH_GAPPS := true
+# Build prop overides
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="peridot_global-user 14 UKQ1.240116.001 V816.0.10.0.UNPMIXM release-keys" \
@@ -40,9 +28,24 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceName=peridot
     DeviceProduct=peridot_global \
     SystemName=peridot_global \
-    SystemDevice=peridot
+    SystemDevice=peridot \
+    RisingChipset="8sGEN3" \
+    RisingMaintainer="AtharvaSwamy"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# Sign Builds
-PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/marble/priv-keys/releasekey
+
+# RisingTechOSS Flags
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
+TARGET_HAS_UDFPS := true
+TARGET_ENABLE_BLUR := true
+
+# GApps
+WITH_GMS := true
+TARGET_CORE_GMS := false
+TARGET_CORE_GMS_EXTRAS := false
+
+# Maintainer
+RISING_MAINTAINER := AtharvaSwamy
