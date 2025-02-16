@@ -33,4 +33,4 @@ git clone https://github.com/Project-Flare-Devices/device_xiaomi_peridot-kernel 
 
 # Miuicamera
 git clone https://gitea.com/athizz2005/vendor_xiaomi_peridot-miuicamera -b main vendor/xiaomi/peridot-miuicamera --depth=1
-git clone https://github.com/project-dynamic/device_xiaomi_peridot-miuicamera -b 15 vendor/xiaomi/peridot-miuicamera --depth=1
+cd frameworks/base && curl https://github.com/project-dynamic/android_frameworks_base/commit/b81458234ed6ee271af647db22a3983f5a5b6b37.patch | git am && cd ../..
