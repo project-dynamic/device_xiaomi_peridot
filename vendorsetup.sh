@@ -27,7 +27,7 @@ rm -rf device/qcom/sepolicy_vndr/sm8650
 git clone https://github.com/xiaomi-peridot/device_qcom_sepolicy_vndr -b vic-sm8650 device/qcom/sepolicy_vndr/sm8650 --depth=1
 
 # Device Repositories
-git clone https://github.com/Project-Flare-Devices/vendor_xiaomi_peridot  vendor/xiaomi/peridot --depth=1
+git clone https://github.com/project-dynamic/vendor_xiaomi_peridot-kenway  vendor/xiaomi/peridot --depth=1
 git clone https://github.com/xiaomi-peridot/hardware_xiaomi -b vic hardware/xiaomi --depth=1
 git clone https://github.com/Project-Flare-Devices/device_xiaomi_peridot-kernel device/xiaomi/peridot-kernel --depth=1
 
