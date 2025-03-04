@@ -5,9 +5,10 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_peridot.mk
+    $(LOCAL_DIR)/infinity_peridot.mk
+
 
 COMMON_LUNCH_CHOICES := \
-    lineage_peridot-eng \
-    lineage_peridot-userdebug \
-    lineage_peridot-user
+    infinity_peridot-eng \
+    infinity_peridot-userdebug \
+    infinity_peridot-user
