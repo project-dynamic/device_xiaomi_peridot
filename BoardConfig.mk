@@ -208,6 +208,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
+SOONG_CONFIG_rfs_mpss_firmware_symlink_target := modem_firmware
 
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
