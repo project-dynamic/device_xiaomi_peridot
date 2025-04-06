@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_peridot.mk
+    $(LOCAL_DIR)/infinity_peridot.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_peridot-eng \
-    aosp_peridot-userdebug \
-    aosp_peridot-user
+    infinity_peridot-eng \
+    infinity_peridot-userdebug \
+    infinity_peridot-user
