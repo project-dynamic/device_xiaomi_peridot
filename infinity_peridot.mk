@@ -9,12 +9,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common PixelProject stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Inherit from peridot device
 $(call inherit-product, device/xiaomi/peridot/device.mk)
 
-PRODUCT_NAME := aosp_peridot
+PRODUCT_NAME := infinity_peridot
 PRODUCT_DEVICE := peridot
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
@@ -26,12 +26,12 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 EXTRA_UDFPS_ICONS := true
 TARGET_HAS_UDFPS := true
-
-CUSTOM_BUILD_TYPE := OFFICIAL
+INFINITY_BUILD_TYPE := OFFICIAL
+INFINITY_MAINTAINER := AtharvaSwamy
+TARGET_SUPPORTS_BLUR := true
 
 # Gapps
-WITH_GMS := true
-BUILD_WITH_GAPPS := true
+WITH_GAPPS := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="peridot_global-user 14 UKQ1.240624.001 OS2.0.100.0.VNPMIXM release-keys" \
@@ -43,5 +43,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# Sign Builds
-PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/marble/priv-keys/releasekey
