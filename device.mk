@@ -31,10 +31,6 @@ $(call inherit-product-if-exists, vendor/bcr/bcr.mk)
 # Reduce system server verbosity
 PRODUCT_SYSTEM_SERVER_DEBUG_INFO := false
 
-# Images
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/images/vendor_boot.img:vendor_boot.img
-
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
