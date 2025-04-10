@@ -96,8 +96,8 @@ BOARD_MKBOOTIMG_INIT_ARGS += --header_version $(BOARD_INIT_BOOT_HEADER_VERSION)
 
 BOARD_KERNEL_CMDLINE := \
     video=vfb:640x400,bpp=32,memsize=3072000 \
-    swinfo.fingerprint=peridot:$(INFINITY_VERSION) \
-    mtdoops.fingerprint=peridot:$(INFINITY_VERSION)
+    swinfo.fingerprint=peridot:$(LINEAGE_VERSION) \
+    mtdoops.fingerprint=peridot:$(LINEAGE_VERSION)
 
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
@@ -146,7 +146,7 @@ TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/qcom-battery/night_ch
 CAMERA_PACKAGE_NAME := com.android.camera
 
 # Partitions
-ifneq ($(WITH_GAPPS),true)
+ifneq ($(WITH_GMS),true)
 BOARD_PRODUCTIMAGE_EXTFS_INODE_COUNT ?= -1
 ifeq ($(BOARD_PRODUCTIMAGE_MINIMAL_PARTITION_RESERVED_SIZE),true)
 BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE ?= 1188036608
