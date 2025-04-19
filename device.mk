@@ -215,10 +215,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
-# Fastcharge
-PRODUCT_PACKAGES += \
-    vendor.lineage.fastcharge@1.0-service.xiaomi
-
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.common.thread.vendor \
@@ -462,6 +458,7 @@ PRODUCT_PACKAGES += \
     SettingsProviderOverlayPeridotRedmi \
     SystemUIOverlayPeridot \
     TelephonyOverlayPeridot \
+    FastChargePeridot \
     WifiOverlayPeridot \
     WifiOverlayPeridotPOCO \
     WifiOverlayPeridotRedmi
